@@ -1,0 +1,91 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "primaryPA"
+                },
+                {
+                    "name": "household"
+                },
+                {
+                    "name": "registrationRC"
+                }
+            ],
+            [
+                {
+                    "name": "idNumber"
+                },
+                {
+                    "name": "gender"
+                },
+                {
+                    "name": "dateofbirth"
+                },
+                {
+                    "name": "primLanguage"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "phonewa"
+                },
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Personal Information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "addressStreet"
+                },
+                {
+                    "name": "houseNumber"
+                },
+                {
+                    "name": "addressCity"
+                },
+                {
+                    "name": "addressPostalCode"
+                }
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Address"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "modalityPreferred"
+                },
+                false,
+                false,
+                false
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Modality"
+    }
+]

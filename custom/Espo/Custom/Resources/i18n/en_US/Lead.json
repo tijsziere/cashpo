@@ -1,0 +1,51 @@
+{
+    "labels": {
+        "Create Lead": "Create Registration"
+    },
+    "fields": {
+        "createdContact": "Person Affected",
+        "primLanguage": "Primary Language",
+        "dateofbirth": "Date of Birth",
+        "idNumber": "ID Number",
+        "phonewa": "Phone has WhatsApp?",
+        "photo": "Photo",
+        "regID": "Registration number",
+        "gender": "Gender",
+        "createdMember": "Household Member",
+        "projects": "Projects",
+        "project": "Project"
+    },
+    "links": {
+        "createdContact": "Person Affected",
+        "createdMember": "Household Member",
+        "projects": "Projects",
+        "contacts": "Persons affected",
+        "project": "Project"
+    },
+    "options": {
+        "primLanguage": {
+            "English": "English",
+            "Arabic": "Arabic",
+            "Kurdish": "Kurdish",
+            "Persian": "Persian",
+            "Turkish": "Turkish",
+            "Other": "Other"
+        },
+        "gender": {
+            "male": "Male",
+            "female": "Female",
+            "notsay": "Rather not say"
+        },
+        "source": {
+            "": "None",
+            "Call": "Call",
+            "Email": "Email",
+            "Existing Customer": "Existing Customer",
+            "Partner": "Partner",
+            "Public Relations": "Public Relations",
+            "Web Site": "KoBo",
+            "Campaign": "Campaign",
+            "Other": "Other"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "kanbanViewMode": false,
+    "color": "#edc755",
+    "iconClass": "fas fa-home",
+    "dynamicLogic": {
+        "fields": {
+            "statusWhyCancelled": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Cancelled"
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Cancelled"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

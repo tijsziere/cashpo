@@ -1,0 +1,416 @@
+{
+    "fields": {
+        "name": {
+            "type": "personName",
+            "isPersonalData": true
+        },
+        "salutationName": {
+            "type": "enum",
+            "options": [
+                "",
+                "Mr.",
+                "Ms.",
+                "Mrs.",
+                "Dr."
+            ]
+        },
+        "firstName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "default": "",
+            "trim": true
+        },
+        "lastName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "default": "",
+            "trim": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "emailAddress": {
+            "type": "email",
+            "isPersonalData": true
+        },
+        "phoneNumber": {
+            "type": "phone",
+            "typeList": [
+                "Mobile",
+                "Office",
+                "Home",
+                "Fax",
+                "Other"
+            ],
+            "defaultType": "Mobile",
+            "isPersonalData": true
+        },
+        "address": {
+            "type": "address",
+            "isPersonalData": true
+        },
+        "addressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar",
+            "readOnly": true
+        },
+        "addressCity": {
+            "type": "varchar",
+            "trim": true,
+            "readOnly": true
+        },
+        "addressState": {
+            "type": "varchar",
+            "trim": true
+        },
+        "addressCountry": {
+            "type": "varchar",
+            "trim": true
+        },
+        "addressPostalCode": {
+            "type": "varchar",
+            "trim": true,
+            "readOnly": true,
+            "options": []
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "household": {
+            "type": "link"
+        },
+        "householdPrimary": {
+            "type": "link",
+            "isCustom": true
+        },
+        "dateofbirth": {
+            "notNull": false,
+            "type": "date",
+            "required": true,
+            "isCustom": true,
+            "isPersonalData": true,
+            "audited": true
+        },
+        "gender": {
+            "type": "enum",
+            "options": [
+                "male",
+                "female",
+                "notsay"
+            ],
+            "style": {
+                "male": null,
+                "female": null,
+                "notsay": null
+            },
+            "default": "male",
+            "isCustom": true,
+            "audited": true,
+            "isPersonalData": true
+        },
+        "idNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "audited": true,
+            "isPersonalData": true,
+            "options": [],
+            "isCustom": true
+        },
+        "phonewa": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "photo": {
+            "type": "image",
+            "previewSize": "small",
+            "listPreviewSize": "",
+            "isPersonalData": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "primLanguage": {
+            "type": "enum",
+            "options": [
+                "English",
+                "Arabic",
+                "Kurdish",
+                "Persian",
+                "Turkish",
+                "Other"
+            ],
+            "style": {
+                "English": null,
+                "Arabic": null,
+                "Kurdish": null,
+                "Persian": null,
+                "Turkish": null,
+                "Other": null
+            },
+            "audited": true,
+            "default": "English",
+            "isCustom": true
+        },
+        "registrationRC": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "BNF-",
+            "isCustom": true
+        },
+        "financeIncome": {
+            "type": "currency",
+            "required": false,
+            "min": 0,
+            "audited": true,
+            "isPersonalData": true,
+            "isCustom": true
+        },
+        "modalityPreferred": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "modalityAssigned": {
+            "type": "enum",
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "medical": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDiabetes": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalHighBloodPressure": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOther": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOtherSpecify": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "medicalAllergies": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDisabled": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Active",
+                "Under investigation",
+                "Cancelled"
+            ],
+            "style": {
+                "Active": "success",
+                "Under investigation": "warning",
+                "Cancelled": "danger"
+            },
+            "audited": true,
+            "default": "Active",
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "statusWhyCancelled": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "primaryPA": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "houseNumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true,
+            "readOnly": true
+        },
+        "agegroupCalculated02": {
+            "type": "int",
+            "isCustom": true
+        },
+        "agegroupCalculated317": {
+            "type": "int",
+            "isCustom": true
+        },
+        "agegroupCalculated1865": {
+            "type": "int",
+            "isCustom": true
+        },
+        "agegroupCalculated65plus": {
+            "type": "int",
+            "isCustom": true
+        },
+        "originalLead": {
+            "type": "linkOne"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "household": {
+            "type": "belongsTo",
+            "foreign": "hhMembers",
+            "entity": "Account",
+            "audited": false,
+            "isCustom": true
+        },
+        "householdPrimary": {
+            "type": "belongsTo",
+            "foreign": "primaryHhMember",
+            "entity": "Account",
+            "isCustom": true
+        },
+        "originalLead": {
+            "type": "hasOne",
+            "foreign": "createdMember",
+            "entity": "Lead",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "indexes": {
+        "firstName": {
+            "columns": [
+                "firstName",
+                "deleted"
+            ]
+        },
+        "name": {
+            "columns": [
+                "firstName",
+                "lastName"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        }
+    }
+}

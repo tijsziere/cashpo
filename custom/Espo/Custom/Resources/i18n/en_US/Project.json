@@ -1,0 +1,35 @@
+{
+    "fields": {
+        "donor": "Donor",
+        "contacts": "Persons Affected",
+        "distributions": "Distributions",
+        "start": "Start",
+        "end": "End",
+        "objective": "Objective",
+        "criteria": "Targeting Criteria",
+        "registrations": "registrations",
+        "leads": "Registration",
+        "modality": "Modality",
+        "amount": "Amount",
+        "amountCurrency": "Amount (Currency)",
+        "amountConverted": "Amount (Converted)"
+    },
+    "links": {
+        "donor": "Donor",
+        "contacts": "Persons Affected",
+        "distributions": "Distributions",
+        "registrations": "registrations",
+        "leads": "Registration"
+    },
+    "labels": {
+        "Create Project": "Create Project"
+    },
+    "options": {
+        "modality": {
+            "Cash": "Cash",
+            "Vouchers": "Vouchers",
+            "eVoucher": "eVoucher",
+            "inKind": "inKind"
+        }
+    }
+}

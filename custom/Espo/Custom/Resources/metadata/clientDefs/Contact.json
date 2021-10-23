@@ -1,0 +1,97 @@
+{
+    "kanbanViewMode": false,
+    "color": "#a4c5e0",
+    "iconClass": "fas fa-user-friends",
+    "dynamicLogic": {
+        "fields": {
+            "medicalOtherSpecify": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medicalOther"
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medicalOther"
+                        }
+                    ]
+                }
+            },
+            "medicalAllergies": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medical"
+                        }
+                    ]
+                }
+            },
+            "medicalDiabetes": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medical"
+                        }
+                    ]
+                }
+            },
+            "medicalHighBloodPressure": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medical"
+                        }
+                    ]
+                }
+            },
+            "medicalOther": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medical"
+                        }
+                    ]
+                }
+            },
+            "medicalDisabled": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isTrue",
+                            "attribute": "medical"
+                        }
+                    ]
+                }
+            },
+            "statusWhyCancelled": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Cancelled"
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Cancelled"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

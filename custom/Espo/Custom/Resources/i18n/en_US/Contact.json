@@ -1,0 +1,91 @@
+{
+    "labels": {
+        "Create Contact": "Create Person Affected"
+    },
+    "fields": {
+        "accounts": "Households",
+        "originalLead": "Original Registration",
+        "dateofbirth": "Date of Birth",
+        "gender": "Gender",
+        "idNumber": "ID Number",
+        "phonewa": "Phone has WhatsApp?",
+        "photo": "Photo",
+        "primLanguage": "Primary Language",
+        "registrationRC": "Beneficiary number",
+        "hh02": "0 to 2 years old",
+        "hh317": "3 to 17 years old",
+        "hh1865": "18 to 65 years old",
+        "hh65": "65+ years old",
+        "financeIncome": "Total household income",
+        "financeIncomeCurrency": "Total household income (Currency)",
+        "financeIncomeConverted": "Total household income (Converted)",
+        "modalityPreferred": "Preferred Modality",
+        "modalityAssigned": "Assigned Modality",
+        "medical": "Medical conditions in the household?",
+        "medicalDiabetes": "Diabetes",
+        "medicalHighBloodPressure": "High Blood Pressure",
+        "medicalOther": "Other medical issue (specify)",
+        "medicalOtherSpecify": "Specify other medical issue",
+        "medicalAllergies": "Allergies?",
+        "medicalDisabled": "Disabled persons in household",
+        "status": "Status",
+        "statusWhyCancelled": "Why Cancelled?",
+        "primaryPA": "Primary Person Affected?",
+        "houseNumber": "House Number",
+        "distributions": "Distributions",
+        "projects": "Projects",
+        "feedbacks": "Feedbacks",
+        "lead": "Registration",
+        "message": "Message",
+        "messages": "Messages",
+        "messageType": "Message Type",
+        "duplID": "DuplID",
+        "distAmount": "Amount",
+        "distAmountCurrency": "Amount (Currency)",
+        "distAmountConverted": "Amount (Converted)",
+        "qrCode": "QR Code"
+    },
+    "links": {
+        "accounts": "Households",
+        "originalLead": "Original Registration",
+        "distributions": "Distributions",
+        "projects": "Projects",
+        "feedbacks": "Feedbacks",
+        "lead": "Registration",
+        "message": "Message",
+        "messages": "Messages",
+        "messageType": "Message Type"
+    },
+    "options": {
+        "gender": {
+            "male": "Male",
+            "female": "Female",
+            "notsay": "Rather not say"
+        },
+        "primLanguage": {
+            "English": "English",
+            "Arabic": "Arabic",
+            "Kurdish": "Kurdish",
+            "Persian": "Persian",
+            "Turkish": "Turkish",
+            "Other": "Other"
+        },
+        "modalityPreferred": {
+            "eVoucher": "eVoucher",
+            "Voucher": "Voucher",
+            "Bank Transfer": "Bank Transfer",
+            "Mobile money": "Mobile money"
+        },
+        "modalityAssigned": {
+            "eVoucher": "eVoucher",
+            "Voucher": "Voucher",
+            "Bank Transfer": "Bank Transfer",
+            "Mobile money": "Mobile money"
+        },
+        "status": {
+            "Active": "Active",
+            "Under investigation": "Under investigation",
+            "Cancelled": "Cancelled"
+        }
+    }
+}

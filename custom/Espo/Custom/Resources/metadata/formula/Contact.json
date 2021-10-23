@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "duplID = record\\count('Contact', 'idNumber', idNumber);\n$distid = record\\findRelatedOne('Contact', id, 'projects');\ndistAmount = record\\attribute('Project', $distid, 'amount');\ndistAmountCurrency = record\\attribute('Project', $distid, 'amountCurrency');\n\nqrCode = string\\concatenate(\"https://pademo.510.global/#Contact/view/\", id);"
+}

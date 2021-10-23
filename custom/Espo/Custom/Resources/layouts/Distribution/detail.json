@@ -1,0 +1,27 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "distDate"
+                },
+                {
+                    "name": "location"
+                },
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "project"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

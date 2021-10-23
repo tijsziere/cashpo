@@ -1,0 +1,147 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "idNumber"
+                },
+                {
+                    "name": "primLanguage"
+                },
+                {
+                    "name": "registrationRC"
+                }
+            ],
+            [
+                {
+                    "name": "dateofbirth"
+                },
+                false,
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "phonewa"
+                }
+            ],
+            [
+                {
+                    "name": "addressStreet"
+                },
+                {
+                    "name": "houseNumber"
+                },
+                {
+                    "name": "addressPostalCode"
+                },
+                {
+                    "name": "addressState"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "hidden": false,
+        "customLabel": "Contact Details"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "hh02"
+                },
+                {
+                    "name": "hh317"
+                },
+                {
+                    "name": "hh1865"
+                },
+                {
+                    "name": "hh65"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "hidden": false,
+        "customLabel": "Household Composition"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "financeIncome"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "hidden": false,
+        "customLabel": "Finance"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "modalityPreferred"
+                },
+                {
+                    "name": "modalityAssigned"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "hidden": false,
+        "customLabel": "Modality"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "medical"
+                },
+                {
+                    "name": "medicalDisabled"
+                }
+            ],
+            [
+                {
+                    "name": "medicalAllergies"
+                },
+                {
+                    "name": "medicalDiabetes"
+                },
+                {
+                    "name": "medicalHighBloodPressure"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "medicalOther"
+                },
+                {
+                    "name": "medicalOtherSpecify"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "hidden": false,
+        "customLabel": "Medical Conditions"
+    }
+]

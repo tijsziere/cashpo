@@ -1,0 +1,133 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "accountName",
+            "emailAddress"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "links": {
+        "cases": {
+            "audited": true
+        },
+        "photo": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "disabled": true
+        },
+        "createdMember": {
+            "type": "belongsTo",
+            "foreign": "originalLead",
+            "entity": "HHMember",
+            "isCustom": true
+        },
+        "project": {
+            "type": "belongsTo",
+            "foreign": "leads",
+            "entity": "Project",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "fields": {
+        "primLanguage": {
+            "type": "enum",
+            "options": [
+                "English",
+                "Arabic",
+                "Kurdish",
+                "Persian",
+                "Turkish",
+                "Other"
+            ],
+            "style": {
+                "English": null,
+                "Arabic": null,
+                "Kurdish": null,
+                "Persian": null,
+                "Turkish": null,
+                "Other": null
+            },
+            "default": "English",
+            "isCustom": true,
+            "required": true
+        },
+        "dateofbirth": {
+            "notNull": false,
+            "type": "date",
+            "required": false,
+            "isCustom": true
+        },
+        "idNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "audited": true,
+            "options": [],
+            "isCustom": true
+        },
+        "phonewa": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "photo": {
+            "type": "image",
+            "previewSize": "small",
+            "listPreviewSize": "",
+            "maxFileSize": 5,
+            "isCustom": true
+        },
+        "regID": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "REG-",
+            "isCustom": true
+        },
+        "gender": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "male",
+                "female",
+                "notsay"
+            ],
+            "style": {
+                "male": null,
+                "female": null,
+                "notsay": null
+            },
+            "default": "male",
+            "isCustom": true
+        },
+        "createdMember": {
+            "type": "link"
+        },
+        "project": {
+            "type": "link"
+        },
+        "source": {
+            "style": {
+                "": null,
+                "Call": null,
+                "Email": null,
+                "Existing Customer": null,
+                "Partner": null,
+                "Public Relations": null,
+                "Web Site": null,
+                "Campaign": null,
+                "Other": null
+            }
+        }
+    }
+}

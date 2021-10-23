@@ -1,0 +1,31 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-first-aid",
+    "dynamicLogic": {
+        "fields": {
+            "amount": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "notEquals",
+                            "attribute": "modality",
+                            "value": "inKind"
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "notEquals",
+                            "attribute": "modality",
+                            "value": "inKind"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

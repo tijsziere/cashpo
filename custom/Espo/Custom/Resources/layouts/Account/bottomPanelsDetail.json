@@ -1,0 +1,18 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "hhMembers": {
+        "index": 0
+    },
+    "contacts": {
+        "index": 1
+    },
+    "cases": {
+        "index": 2
+    },
+    "stream": {
+        "sticked": true,
+        "index": 3
+    }
+}

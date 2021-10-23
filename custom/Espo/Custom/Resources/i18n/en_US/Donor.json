@@ -1,0 +1,18 @@
+{
+    "fields": {
+        "projects": "Projects",
+        "contactPointName": "Contact Point Name",
+        "contactPointEmail": "Contact Point Email",
+        "contactPointPhone": "Contact Point Phone",
+        "newlinetest": "Newlinetest",
+        "newlinetestreplaced": "Newlinetestreplaced",
+        "connector": "Connector",
+        "connector2": "Connector2"
+    },
+    "links": {
+        "projects": "Projects"
+    },
+    "labels": {
+        "Create Donor": "Create Donor"
+    }
+}

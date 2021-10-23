@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "$ph_name=ifThenElse(contactName==null, leadName, contactName);\nname = string\\concatenate(type, ' - ', $ph_name);\n//name = 'tijstest'"
+}

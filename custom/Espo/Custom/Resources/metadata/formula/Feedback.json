@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "//Give name\nname = string\\concatenate(type, '-', createdAt);\n$namecase = string\\concatenate('FeedbackFollowUp-',type, '-', createdAt);\n\n//create related case if follow up is needed\nifThen(followUp==true, \n    $caseID = record\\create('Case','contactsIds',contactsIds,'description',description,'assignedUserId',assignedUserId);\n    caseId = $caseID;\n    //record\\relate('Feedback',id,'case',$caseID);\n    record\\update('Case',$caseID,'type','followup');\n    record\\update('Case',$caseID,'name', $namecase);\n    );"
+}

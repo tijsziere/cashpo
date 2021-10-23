@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "address": "Address",
+        "householdMembers": "Household Members"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "householdMembers": "Household Members"
+    },
+    "labels": {
+        "Create Household": "Create Household"
+    }
+}

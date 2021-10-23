@@ -1,0 +1,63 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "messageType"
+                }
+            ],
+            [
+                {
+                    "name": "contact"
+                },
+                false,
+                {
+                    "name": "to"
+                },
+                {
+                    "name": "from"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "body"
+                }
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Message Body"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "sid"
+                },
+                {
+                    "name": "sent"
+                },
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "errorcode"
+                }
+            ]
+        ],
+        "style": "info",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Sending Info"
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "stream": {
+        "sticked": true,
+        "index": 0
+    },
+    "cases": {
+        "index": 1
+    },
+    "distributions": {
+        "index": 2
+    },
+    "messages": {
+        "index": 3
+    }
+}

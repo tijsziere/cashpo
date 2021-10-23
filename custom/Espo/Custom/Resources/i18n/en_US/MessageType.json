@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "message": "Message",
+        "messages": "Messages",
+        "contact": "Person Affected",
+        "body": "Body",
+        "placeholder1": "Placeholder 1",
+        "placeholder2": "Placeholder 2",
+        "placeholder3": "Placeholder 3",
+        "placeholder4": "Placeholder 4",
+        "contacts": "Persons Affected"
+    },
+    "links": {
+        "message": "Message",
+        "messages": "Messages",
+        "contact": "Person Affected",
+        "contacts": "Persons Affected"
+    },
+    "labels": {
+        "Create MessageType": "Create Message Type"
+    }
+}

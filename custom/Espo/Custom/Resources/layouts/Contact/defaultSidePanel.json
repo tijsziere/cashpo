@@ -1,0 +1,29 @@
+[
+    {
+        "name": ":assignedUser"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "statusWhyCancelled"
+    },
+    {
+        "name": "qrCode"
+    },
+    {
+        "name": "projects"
+    },
+    {
+        "name": "originalLead"
+    },
+    {
+        "name": "messageType"
+    },
+    {
+        "name": "teams"
+    },
+    {
+        "name": "photo"
+    }
+]

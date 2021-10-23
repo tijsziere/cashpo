@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "address": "Address",
+        "household": "Household",
+        "householdPrimary": "Household (primary)",
+        "primaryPA": "Primary PA",
+        "houseNumber": "House Number",
+        "dateofbirth": "Date of Birth",
+        "agegroupCalculated02": "AgegroupCalculated02",
+        "agegroupCalculated317": "AgegroupCalculated317",
+        "agegroupCalculated1865": "AgegroupCalculated1865",
+        "agegroupCalculated65plus": "AgegroupCalculated65plus",
+        "originalLead": "Registration"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "household": "Household",
+        "householdPrimary": "Household",
+        "originalLead": "Registration"
+    },
+    "labels": {
+        "Create HHMember": "Create HouseholdMember"
+    }
+}
