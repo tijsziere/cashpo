@@ -13,9 +13,16 @@ fi
 
 wget https://github.com/tijsziere/cashpo/archive/main.tar.gz
 
-tar -xzf "main.tar.gz" -C /var/www/html
+tar -xzf "main.tar.gz"
 
-cd /var/www/html
+rm -R /var/www/espocrm/data/espocrm/custom/
+cp -R cashpo-main/custom /var/www/espocrm/data/espocrm/
+rm -R cashpo-main
+rm install.sh
+rm main.tar.gz
+
+
+cd /var/www/espocrm/data/espocrm/
 find . -type d -exec chmod 755 {} + && find . -type f -exec chmod 644 {} +;
 find data custom client/custom -type d -exec chmod 775 {} + && find data custom client/custom -type f -exec chmod 664 {} +;
 chmod 775 application/Espo/Modules client/modules;
@@ -23,6 +30,6 @@ chmod 754 bin/command;
 
 chown -R www-data:www-data .;
 
-php rebuild.php
+bash /var/www/espocrm/command.sh rebuild
 
-echo "CashpoCRM has been installed, you can use the credentials above to login"
+echo "510 CashpoCRM has been installed, you can use the credentials above to login"
