@@ -5,9 +5,9 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 ## Requirements
 
 1. Operating system:
-* Ubuntu
-* Debian
-* Linux Mint
+	* Ubuntu
+	* Debian
+	* Linux Mint
 2. Access via command line.
 3. Root or sudo access.
 
