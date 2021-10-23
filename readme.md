@@ -11,7 +11,7 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 2. Access via command line.
 3. Root or sudo access.
 
-## installation
+## Installation
 
 Open your server's command line and run the commands:
 
@@ -30,3 +30,10 @@ sudo bash install.sh -y --ssl --letsencrypt --domain=my-espocrm.com --email=emai
 ## Documentation
 
 For more information about `options`, `installation modes` and more, see [documentation](https://github.com/espocrm/documentation/blob/master/docs/administration/installation-by-script.md).
+
+### Todo
+
+- [x] Load 510 custom files and rebuild database
+- [ ] Replace logo
+- [ ] Replace favicon
+- [ ] Look into UI customisations
