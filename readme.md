@@ -15,15 +15,17 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 
 Open your server's command line and run the commands:
 
-``` wget https://raw.githubusercontent.com/tijsziere/cashpo/main/cashpo_install.sh ```
-
-then
-
-``` sudo bash cashpo_install.sh ```
+``` 
+wget https://raw.githubusercontent.com/tijsziere/cashpo/main/cashpo_install.sh
+sudo bash cashpo_install.sh 
+```
 
 Or, for your own domain including a letsencrypt certificate, run:
 
-``` bash install.sh -y --ssl --letsencrypt --domain=my-espocrm.com --email=email@my-domain.com ```
+``` 
+wget https://raw.githubusercontent.com/tijsziere/cashpo/main/cashpo_install.sh
+sudo bash install.sh -y --ssl --letsencrypt --domain=my-espocrm.com --email=email@my-domain.com 
+```
 
 ## Documentation
 
