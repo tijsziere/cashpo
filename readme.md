@@ -10,6 +10,7 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 - [ ] Look into UI customisations (theme, menu items, ...)
 - [ ] Import roles
 - [ ] Check if cron works
+- [ ] Look into Twilio SMS sending, as mentioned in [this issue]https://github.com/espocrm/espocrm/issues/2075
 
 ## Requirements
 
