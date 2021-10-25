@@ -1,8 +1,5 @@
 #!/bin/bash
 
-wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
-bash install.sh
-
 read -p "Now we will proceed make sure espoCRM becomes CashpoCRM by 510, do you want to contiue? [y/n]" -n 1 -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
