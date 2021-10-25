@@ -24,25 +24,25 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 
 ## Installation
 
-1. Start with the installation of espoCRM
+1. Start with the installation of espoCRM, choose one of the 3 options below:
 
-For EspoCRM with letsencrypt certificate
-```
-wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
-bash install.sh -y --ssl --letsencrypt --domain=my-espocrm.com --email=email@my-domain.com
-```
+	For EspoCRM with letsencrypt certificate
+	```
+	wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
+	bash install.sh -y --ssl --letsencrypt --domain=my-espocrm.com --email=email@my-domain.com
+	```
 
-Own certificate
-```
-wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
-bash install.sh --ssl --owncertificate --domain=my-espocrm.com
-```
+	Own certificate
+	```
+	wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
+	bash install.sh --ssl --owncertificate --domain=my-espocrm.com
+	```
 
-Or without a certificate
-```
-wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
-bash install.sh
-```
+	Or without a certificate
+	```
+	wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
+	bash install.sh
+	```
 
 2. Then install Cash customisations
 ```
