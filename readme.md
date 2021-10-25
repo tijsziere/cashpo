@@ -5,7 +5,7 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 ### Todo
 
 - [x] Load 510 custom files and rebuild database
-- [ ] Adapt install script to also take certificates / https
+- [X] Adapt install script to also take certificates / https
 - [ ] Replace logo
 - [ ] Replace favicon
 - [ ] Look into UI customisations (theme, menu items, ...)
