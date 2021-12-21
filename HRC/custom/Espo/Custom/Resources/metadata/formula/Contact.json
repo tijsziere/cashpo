@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "duplID = record\\count('Contact', 'idNumber', idNumber);\n$distid = record\\findRelatedOne('Contact', id, 'projects');\ndistAmount = record\\attribute('Project', $distid, 'amount');\ndistAmountCurrency = record\\attribute('Project', $distid, 'amountCurrency');\n\nqrCode = string\\concatenate(\"https://pademo.510.global/#Contact/view/\", id);\n\n// Calculate total household size\n$totalFemale = female_5 + female_18 + female_64 + female_elderly;\n$totalMale = male_5 + male_18 + male_64 + male_elderly;\ntotalHouseholdSize = $totalFemale + $totalMale;\n\n$children = female_5 + female_18 + male_5 + male_18;\nlarge_family = ifThenElse($children > 2, 1, 0);"
+}

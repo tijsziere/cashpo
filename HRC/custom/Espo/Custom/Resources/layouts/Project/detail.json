@@ -1,0 +1,48 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "donor"
+                }
+            ],
+            [
+                {
+                    "name": "start"
+                },
+                {
+                    "name": "end"
+                },
+                {
+                    "name": "modality"
+                },
+                {
+                    "name": "amount"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "objective"
+                }
+            ],
+            [
+                {
+                    "name": "criteria"
+                }
+            ]
+        ],
+        "style": "success",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Description"
+    }
+]

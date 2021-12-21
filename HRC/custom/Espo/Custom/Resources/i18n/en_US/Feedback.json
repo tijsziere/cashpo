@@ -1,0 +1,23 @@
+{
+    "fields": {
+        "contacts": "Persons Affected",
+        "case": "Case",
+        "type": "Type",
+        "followUp": "Needs Follow Up?"
+    },
+    "links": {
+        "contacts": "Persons Affected",
+        "case": "Case"
+    },
+    "labels": {
+        "Create Feedback": "Create Feedback"
+    },
+    "options": {
+        "type": {
+            "Thank You": "Thank You",
+            "Question": "Question",
+            "Complaint": "Complaint",
+            "General Remark": "General Remark"
+        }
+    }
+}

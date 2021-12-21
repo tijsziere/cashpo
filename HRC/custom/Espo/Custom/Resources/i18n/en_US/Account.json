@@ -1,0 +1,26 @@
+{
+    "labels": {
+        "Create Account": "Create Household"
+    },
+    "fields": {
+        "contacts": "Persons Affected",
+        "householdMembers": "Household Members",
+        "hhMembers": "Household Members",
+        "primaryHhMember": "Primary PA",
+        "modalityAssigned": "modality Assigned",
+        "modalityPreferred": "modality Preferred",
+        "hhTotal": "Total household members",
+        "hh02": "Household members 0-2",
+        "hh1865": "Household members 18-65",
+        "hh317": "Household members 3-17",
+        "hh65": "Household members 65+",
+        "registrationRC": "Household registrationRC",
+        "phonePrimPA": "Phone"
+    },
+    "links": {
+        "contacts": "Persons Affected",
+        "householdMembers": "Household Members",
+        "hhMembers": "Household Members",
+        "primaryHhMember": "Primary PA"
+    }
+}

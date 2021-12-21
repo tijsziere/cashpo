@@ -1,0 +1,279 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "fields": {
+        "hhMembers": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "isCustom": true
+        },
+        "dateofbirth": {
+            "notNull": false,
+            "type": "date",
+            "required": true,
+            "isCustom": true,
+            "isPersonalData": true,
+            "audited": true
+        },
+        "gender": {
+            "type": "enum",
+            "options": [
+                "male",
+                "female",
+                "notsay"
+            ],
+            "style": {
+                "male": null,
+                "female": null,
+                "notsay": null
+            },
+            "default": "male",
+            "isCustom": true,
+            "audited": true,
+            "isPersonalData": true,
+            "readOnly": true
+        },
+        "idNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "audited": true,
+            "isPersonalData": true,
+            "options": [],
+            "isCustom": true,
+            "readOnly": true
+        },
+        "phonewa": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true,
+            "readOnly": true
+        },
+        "photo": {
+            "type": "image",
+            "previewSize": "small",
+            "listPreviewSize": "",
+            "isPersonalData": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "primLanguage": {
+            "type": "enum",
+            "options": [
+                "English",
+                "Arabic",
+                "Kurdish",
+                "Persian",
+                "Turkish",
+                "Other"
+            ],
+            "style": {
+                "English": null,
+                "Arabic": null,
+                "Kurdish": null,
+                "Persian": null,
+                "Turkish": null,
+                "Other": null
+            },
+            "audited": true,
+            "default": "English",
+            "isCustom": true,
+            "readOnly": true
+        },
+        "registrationRC": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "HH-",
+            "isCustom": true
+        },
+        "hh02": {
+            "type": "int",
+            "required": true,
+            "min": 0,
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "hh317": {
+            "type": "int",
+            "required": true,
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "hh1865": {
+            "type": "int",
+            "isCustom": true,
+            "readOnly": true
+        },
+        "hh65": {
+            "type": "int",
+            "required": true,
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "financeIncome": {
+            "type": "currency",
+            "required": true,
+            "min": 0,
+            "audited": true,
+            "isPersonalData": true,
+            "isCustom": true
+        },
+        "modalityPreferred": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "modalityAssigned": {
+            "type": "enum",
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "medical": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDiabetes": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalHighBloodPressure": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOther": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOtherSpecify": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "medicalAllergies": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDisabled": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Active",
+                "Under investigation",
+                "Cancelled"
+            ],
+            "style": {
+                "Active": "success",
+                "Under investigation": "warning",
+                "Cancelled": "danger"
+            },
+            "audited": true,
+            "default": "Active",
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "statusWhyCancelled": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "houseNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "primaryHhMember": {
+            "type": "linkOne",
+            "isCustom": true,
+            "readOnly": true
+        },
+        "hhTotal": {
+            "type": "int",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "phonePrimPA": {
+            "readOnly": true,
+            "type": "foreign",
+            "link": "primaryHhMember",
+            "field": "phoneNumber",
+            "view": "views/fields/foreign-phone",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "hhMembers": {
+            "type": "hasMany",
+            "foreign": "household",
+            "entity": "HHMember",
+            "audited": false,
+            "isCustom": true
+        },
+        "primaryHhMember": {
+            "type": "hasOne",
+            "foreign": "householdPrimary",
+            "entity": "HHMember",
+            "isCustom": true
+        }
+    }
+}

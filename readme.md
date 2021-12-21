@@ -41,8 +41,8 @@ This script automatically installs CashpoCRM as a Docker image with NGINX server
 	Or without a certificate
 	```
 	wget https://github.com/espocrm/espocrm-installer/releases/latest/download/install.sh
-	bash install.sh
 	```
+	bash install.sh
 
 2. Then install Cash customisations
 ```

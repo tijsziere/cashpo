@@ -1,0 +1,47 @@
+{
+    "links": {
+        "contacts": {
+            "audited": false
+        },
+        "feedback": {
+            "type": "hasOne",
+            "foreign": "case",
+            "entity": "Feedback",
+            "isCustom": true
+        }
+    },
+    "fields": {
+        "name": {
+            "required": false,
+            "options": []
+        },
+        "type": {
+            "required": true,
+            "style": {
+                "": null,
+                "Question": null,
+                "Incident": null,
+                "Problem": null,
+                "followup": null
+            },
+            "options": [
+                "",
+                "Question",
+                "Incident",
+                "Problem",
+                "followup"
+            ]
+        },
+        "feedback": {
+            "type": "linkOne",
+            "isCustom": true
+        },
+        "update": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        }
+    }
+}

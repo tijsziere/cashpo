@@ -1,0 +1,55 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "priority"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "success",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Case Information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "contacts"
+                },
+                {
+                    "name": "lead"
+                }
+            ]
+        ],
+        "style": "primary",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Persons Affected or Registrations"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "attachments"
+                }
+            ]
+        ],
+        "style": "info",
+        "dynamicLogicVisible": null,
+        "hidden": true,
+        "customLabel": "Attachements"
+    }
+]

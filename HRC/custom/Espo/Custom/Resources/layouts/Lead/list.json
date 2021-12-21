@@ -1,0 +1,22 @@
+[
+    {
+        "name": "regID",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "align": "left"
+    },
+    {
+        "name": "status",
+        "width": 15
+    },
+    {
+        "name": "source"
+    },
+    {
+        "name": "createdAt",
+        "width": 13
+    }
+]

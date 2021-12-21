@@ -1,0 +1,37 @@
+{
+    "fields": {
+        "messageTypes": "Message Types",
+        "contacts": "Person Affected",
+        "messageType": "Message Type",
+        "contact": "Person Affected",
+        "to": "To",
+        "from": "From",
+        "body": "Body",
+        "sent": "Sent",
+        "sid": "Message ID",
+        "errorcode": "Error code",
+        "status": "Status",
+        "sendBody": "SendBody",
+        "connector": "Connector"
+    },
+    "links": {
+        "messageTypes": "Message Types",
+        "contacts": "Person Affected",
+        "messageType": "Message Type",
+        "contact": "Person Affected"
+    },
+    "labels": {
+        "Create Message": "Create Message"
+    },
+    "options": {
+        "status": {
+            "tobe": "To be send",
+            "read": "read",
+            "undelivered": "undelivered",
+            "failed": "failed",
+            "delivered": "delivered",
+            "sent": "sent",
+            "queued": "queued"
+        }
+    }
+}

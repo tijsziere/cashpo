@@ -1,0 +1,109 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "primaryHhMember"
+                },
+                {
+                    "name": "idNumber"
+                },
+                {
+                    "name": "gender"
+                },
+                {
+                    "name": "registrationRC"
+                }
+            ],
+            [
+                {
+                    "name": "phonePrimPA"
+                },
+                {
+                    "name": "phonewa"
+                },
+                {
+                    "name": "primLanguage"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Primary PA"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "billingAddressStreet"
+                },
+                {
+                    "name": "houseNumber"
+                },
+                {
+                    "name": "billingAddressCity"
+                },
+                {
+                    "name": "billingAddressPostalCode"
+                }
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Address"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "modalityPreferred"
+                },
+                {
+                    "name": "modalityAssigned"
+                },
+                false,
+                false
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Modality"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "hh02"
+                },
+                {
+                    "name": "hh317"
+                },
+                {
+                    "name": "hh1865"
+                },
+                {
+                    "name": "hh65"
+                }
+            ],
+            [
+                {
+                    "name": "hhTotal"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Household Composition"
+    }
+]

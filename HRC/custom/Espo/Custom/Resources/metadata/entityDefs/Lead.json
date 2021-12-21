@@ -1,0 +1,1258 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "accountName",
+            "emailAddress"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "links": {
+        "cases": {
+            "audited": true
+        },
+        "photo": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "disabled": true
+        },
+        "createdMember": {
+            "type": "belongsTo",
+            "foreign": "originalLead",
+            "entity": "HHMember",
+            "isCustom": true
+        },
+        "project": {
+            "type": "belongsTo",
+            "foreign": "leads",
+            "entity": "Project",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "fields": {
+        "regID": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "REG-",
+            "isCustom": true
+        },
+        "createdMember": {
+            "type": "link"
+        },
+        "project": {
+            "type": "link"
+        },
+        "source": {
+            "style": {
+                "": null,
+                "Call": null,
+                "Email": null,
+                "Existing Customer": null,
+                "Partner": null,
+                "Public Relations": null,
+                "Web Site": null,
+                "Campaign": null,
+                "Other": null
+            }
+        },
+        "dateofbirth": {
+            "notNull": false,
+            "type": "date",
+            "required": true,
+            "isCustom": true,
+            "isPersonalData": true,
+            "audited": true
+        },
+        "idNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "audited": true,
+            "isPersonalData": true,
+            "options": [],
+            "isCustom": true
+        },
+        "phonewa": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "photo": {
+            "type": "image",
+            "previewSize": "small",
+            "listPreviewSize": "",
+            "isPersonalData": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "primLanguage": {
+            "type": "enum",
+            "options": [
+                "English",
+                "Arabic",
+                "Kurdish",
+                "Persian",
+                "Turkish",
+                "Other"
+            ],
+            "style": {
+                "English": null,
+                "Arabic": null,
+                "Kurdish": null,
+                "Persian": null,
+                "Turkish": null,
+                "Other": null
+            },
+            "audited": true,
+            "default": "English",
+            "isCustom": true
+        },
+        "registrationRC": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 103,
+            "padLength": 5,
+            "prefix": "PA-",
+            "isCustom": true
+        },
+        "hh02": {
+            "type": "int",
+            "required": true,
+            "min": 0,
+            "audited": true,
+            "isCustom": true
+        },
+        "hh317": {
+            "type": "int",
+            "required": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "hh1865": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "hh65": {
+            "type": "int",
+            "required": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "financeIncome": {
+            "type": "currency",
+            "required": true,
+            "min": 0,
+            "audited": true,
+            "isPersonalData": true,
+            "isCustom": true
+        },
+        "modalityPreferred": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "modalityAssigned": {
+            "type": "enum",
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "medical": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDiabetes": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalHighBloodPressure": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOther": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOtherSpecify": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "medicalAllergies": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDisabled": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Active",
+                "Under investigation",
+                "Cancelled"
+            ],
+            "style": {
+                "Active": "success",
+                "Under investigation": "warning",
+                "Cancelled": "danger"
+            },
+            "audited": true,
+            "default": "Active",
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "statusWhyCancelled": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "primaryPA": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "houseNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "distributions": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "importDisabled": false,
+            "noLoad": false,
+            "isCustom": true
+        },
+        "projects": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "importDisabled": false,
+            "noLoad": false,
+            "isCustom": true
+        },
+        "feedbacks": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
+        },
+        "lead": {
+            "type": "link"
+        },
+        "messages": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "messageType": {
+            "type": "link"
+        },
+        "duplID": {
+            "type": "int",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "distAmount": {
+            "type": "currency",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "qrCode": {
+            "type": "barcode",
+            "len": 255,
+            "codeType": "QRcode",
+            "readOnly": false,
+            "isCustom": true
+        },
+        "consent_statement": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "otherphone": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "elderly": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "region": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "ATT",
+                "CGR",
+                "CMA",
+                "CRE",
+                "EMT",
+                "EPI",
+                "ION",
+                "NAE",
+                "PEL",
+                "SAE",
+                "THE",
+                "WGR",
+                "WMA"
+            ],
+            "style": {
+                "ATT": null,
+                "CGR": null,
+                "CMA": null,
+                "CRE": null,
+                "EMT": null,
+                "EPI": null,
+                "ION": null,
+                "NAE": null,
+                "PEL": null,
+                "SAE": null,
+                "THE": null,
+                "WGR": null,
+                "WMA": null
+            },
+            "isCustom": true
+        },
+        "regional_unit": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "NAH",
+                "WAH",
+                "CAH",
+                "SAH",
+                "EAT",
+                "PIR",
+                "ISL",
+                "WAT",
+                "UNC",
+                "BOE",
+                "EUB",
+                "EVY",
+                "PHO",
+                "PHT",
+                "IMA",
+                "THK",
+                "KIL",
+                "PEA",
+                "PIE",
+                "SER",
+                "CHL",
+                "CHN",
+                "HER",
+                "LAS",
+                "RET",
+                "DRA",
+                "EVR",
+                "THA",
+                "KAV",
+                "XAN",
+                "RHP",
+                "ART",
+                "IOA",
+                "PRE",
+                "THT",
+                "COR",
+                "ITH",
+                "CEP",
+                "LEF",
+                "ZAK",
+                "CHI",
+                "IKA",
+                "LEM",
+                "LES",
+                "SAM",
+                "ARC",
+                "ARG",
+                "COI",
+                "LAC",
+                "MES",
+                "AND",
+                "KAL",
+                "KAP",
+                "KEA",
+                "KOS",
+                "MIL",
+                "MYK",
+                "NAX",
+                "PAR",
+                "RHO",
+                "SYR",
+                "SAN",
+                "TIN",
+                "KAR",
+                "LAR",
+                "MAG",
+                "SPO",
+                "TRI",
+                "ACH",
+                "AET",
+                "ELI",
+                "FLO",
+                "GRE",
+                "KAS",
+                "KOZ"
+            ],
+            "style": {
+                "NAH": null,
+                "WAH": null,
+                "CAH": null,
+                "SAH": null,
+                "EAT": null,
+                "PIR": null,
+                "ISL": null,
+                "WAT": null,
+                "UNC": null,
+                "BOE": null,
+                "EUB": null,
+                "EVY": null,
+                "PHO": null,
+                "PHT": null,
+                "IMA": null,
+                "THK": null,
+                "KIL": null,
+                "PEA": null,
+                "PIE": null,
+                "SER": null,
+                "CHL": null,
+                "CHN": null,
+                "HER": null,
+                "LAS": null,
+                "RET": null,
+                "DRA": null,
+                "EVR": null,
+                "THA": null,
+                "KAV": null,
+                "XAN": null,
+                "RHP": null,
+                "ART": null,
+                "IOA": null,
+                "PRE": null,
+                "THT": null,
+                "COR": null,
+                "ITH": null,
+                "CEP": null,
+                "LEF": null,
+                "ZAK": null,
+                "CHI": null,
+                "IKA": null,
+                "LEM": null,
+                "LES": null,
+                "SAM": null,
+                "ARC": null,
+                "ARG": null,
+                "COI": null,
+                "LAC": null,
+                "MES": null,
+                "AND": null,
+                "KAL": null,
+                "KAP": null,
+                "KEA": null,
+                "KOS": null,
+                "MIL": null,
+                "MYK": null,
+                "NAX": null,
+                "PAR": null,
+                "RHO": null,
+                "SYR": null,
+                "SAN": null,
+                "TIN": null,
+                "KAR": null,
+                "LAR": null,
+                "MAG": null,
+                "SPO": null,
+                "TRI": null,
+                "ACH": null,
+                "AET": null,
+                "ELI": null,
+                "FLO": null,
+                "GRE": null,
+                "KAS": null,
+                "KOZ": null
+            },
+            "isCustom": true
+        },
+        "disastertype": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "wildfire",
+                "earthquake",
+                "floods"
+            ],
+            "style": {
+                "wildfire": null,
+                "earthquake": null,
+                "floods": null
+            },
+            "isCustom": true
+        },
+        "gender": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "female",
+                "male",
+                "other_gender",
+                "prefer_not_to_say"
+            ],
+            "style": {
+                "female": null,
+                "male": null,
+                "other_gender": null,
+                "prefer_not_to_say": null
+            },
+            "isCustom": true
+        },
+        "marital_status": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "married_reg_partnership",
+                "single",
+                "separated",
+                "divorced",
+                "widow(er)"
+            ],
+            "style": {
+                "married_reg_partnership": null,
+                "single": null,
+                "separated": null,
+                "divorced": null,
+                "widow(er)": null
+            },
+            "isCustom": true
+        },
+        "location": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "audited": true,
+            "options": [],
+            "isCustom": true
+        },
+        "age": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "female_5": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "female_18": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "female_64": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "female_elderly": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "male_5": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "male_18": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "male_64": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "male_elderly": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "img_id_card_front": {
+            "type": "url",
+            "isCustom": true
+        },
+        "img_id_card_back": {
+            "type": "url",
+            "isCustom": true
+        },
+        "E9p1": {
+            "type": "url",
+            "isCustom": true
+        },
+        "E9p2": {
+            "type": "url",
+            "isCustom": true
+        },
+        "E9p3": {
+            "type": "url",
+            "isCustom": true
+        },
+        "coowner_authorisation": {
+            "type": "url",
+            "isCustom": true
+        },
+        "coowner_authorisation2": {
+            "type": "url",
+            "isCustom": true
+        },
+        "comms_preference": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "comms_whatsapp",
+                "viber",
+                "comms_email",
+                "comms_sms",
+                "phone",
+                "comms_other"
+            ],
+            "style": {
+                "comms_whatsapp": null,
+                "viber": null,
+                "comms_email": null,
+                "comms_sms": null,
+                "phone": null,
+                "comms_other": null
+            },
+            "isCustom": true
+        },
+        "comms_language": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "greek",
+                "english"
+            ],
+            "style": {
+                "greek": null,
+                "english": null
+            },
+            "isCustom": true
+        },
+        "head_phone_prefix_1": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "greece",
+                "other"
+            ],
+            "style": {
+                "greece": null,
+                "other": null
+            },
+            "isCustom": true
+        },
+        "head_phone_prefix_2": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "greece",
+                "other"
+            ],
+            "style": {
+                "greece": null,
+                "other": null
+            },
+            "isCustom": true
+        },
+        "affectedresidence": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "main",
+                "secondary"
+            ],
+            "style": {
+                "main": null,
+                "secondary": null
+            },
+            "isCustom": true
+        },
+        "ownership": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "owner",
+                "co-owner"
+            ],
+            "style": {
+                "owner": null,
+                "co-owner": null
+            },
+            "isCustom": true
+        },
+        "classificationtype": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "partially",
+                "fully"
+            ],
+            "style": {
+                "partially": null,
+                "fully": null
+            },
+            "isCustom": true
+        },
+        "uploadclassification": {
+            "type": "url",
+            "isCustom": true
+        },
+        "electricitybill": {
+            "type": "url",
+            "isCustom": true
+        },
+        "single_parent": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "unemployed": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "disabilities": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "illness": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "large_family": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "income_1": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "img_declaration_income_1": {
+            "type": "url",
+            "isCustom": true
+        },
+        "income_2": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "img_declaration_income_2": {
+            "type": "url",
+            "isCustom": true
+        },
+        "img_declaration_income_3": {
+            "type": "url",
+            "isCustom": true
+        },
+        "img_declaration_income_4": {
+            "type": "url",
+            "isCustom": true
+        },
+        "other_declaration": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "img_other_declaration_income": {
+            "type": "url",
+            "isCustom": true
+        },
+        "img_other_declaration_income_consent": {
+            "type": "url",
+            "isCustom": true
+        },
+        "bank": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "national",
+                "pireos",
+                "alpha",
+                "eurobank",
+                "attica",
+                "other_bank",
+                "no_bank"
+            ],
+            "style": {
+                "national": null,
+                "pireos": null,
+                "alpha": null,
+                "eurobank": null,
+                "attica": null,
+                "other_bank": null,
+                "no_bank": null
+            },
+            "isCustom": true
+        },
+        "img_iban": {
+            "type": "url",
+            "isCustom": true
+        },
+        "other_family_status_certificate": {
+            "type": "url",
+            "isCustom": true
+        },
+        "single_parentp2r": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "img_single_family_status_certificate2_001": {
+            "type": "url",
+            "isCustom": true
+        },
+        "single_parentp3r": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "img_single_family_status_certificate3_001": {
+            "type": "url",
+            "isCustom": true
+        },
+        "aff_info": {
+            "type": "url",
+            "isCustom": true
+        },
+        "baseline": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "baseline_affected": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "hh_aff_none",
+                "little",
+                "somewhat",
+                "much",
+                "very_much"
+            ],
+            "style": {
+                "hh_aff_none": null,
+                "little": null,
+                "somewhat": null,
+                "much": null,
+                "very_much": null
+            },
+            "isCustom": true
+        },
+        "baseline_howaffected": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "destroyed",
+                "lostjob",
+                "cannotfindjob",
+                "cannotpaybills",
+                "injured",
+                "lostfamilymember",
+                "feelinsecure",
+                "increasedtension"
+            ],
+            "style": {
+                "destroyed": null,
+                "lostjob": null,
+                "cannotfindjob": null,
+                "cannotpaybills": null,
+                "injured": null,
+                "lostfamilymember": null,
+                "feelinsecure": null,
+                "increasedtension": null
+            },
+            "isCustom": true
+        },
+        "baseline_shelter": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "rent",
+                "friendsrelatives",
+                "stayed",
+                "left"
+            ],
+            "style": {
+                "rent": null,
+                "friendsrelatives": null,
+                "stayed": null,
+                "left": null
+            },
+            "isCustom": true
+        },
+        "baseline_needs": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "rentloan",
+                "repair",
+                "paybills",
+                "food",
+                "medical",
+                "education",
+                "householdequipment",
+                "clothing"
+            ],
+            "style": {
+                "rentloan": null,
+                "repair": null,
+                "paybills": null,
+                "food": null,
+                "medical": null,
+                "education": null,
+                "householdequipment": null,
+                "clothing": null
+            },
+            "isCustom": true
+        },
+        "baseline_coping": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "delaybills",
+                "borrow",
+                "cuttingbasicneeds",
+                "cuttingeducation"
+            ],
+            "style": {
+                "delaybills": null,
+                "borrow": null,
+                "cuttingbasicneeds": null,
+                "cuttingeducation": null
+            },
+            "isCustom": true
+        },
+        "baseline_farmer": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "baseline_farmerwhat": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "olive",
+                "farmer",
+                "breeder",
+                "beekeeper",
+                "resingrower"
+            ],
+            "style": {
+                "olive": null,
+                "farmer": null,
+                "breeder": null,
+                "beekeeper": null,
+                "resingrower": null
+            },
+            "isCustom": true
+        },
+        "baseline_croplivestock": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "baseline_croplivestock_compensation": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "baseline_mainincome": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "1",
+                "0"
+            ],
+            "style": {
+                "1": null,
+                "0": null
+            },
+            "isCustom": true
+        },
+        "baseline_income_aff": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": true,
+            "options": [
+                "lostjob",
+                "lostbusiness",
+                "lostcropslivestock",
+                "affectedindustry"
+            ],
+            "style": {
+                "lostjob": null,
+                "lostbusiness": null,
+                "lostcropslivestock": null,
+                "affectedindustry": null
+            },
+            "isCustom": true
+        },
+        "confirmation": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "email",
+                "sms",
+                "no"
+            ],
+            "style": {
+                "email": null,
+                "sms": null,
+                "no": null
+            },
+            "isCustom": true
+        },
+        "uniqueID": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "baseURL": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "urlUpdated": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "default": "no",
+            "options": [],
+            "isCustom": true
+        },
+        "powerregistrationnr": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "municipality": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "phone2": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "ibannumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        }
+    }
+}

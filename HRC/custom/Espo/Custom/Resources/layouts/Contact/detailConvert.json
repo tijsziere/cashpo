@@ -1,0 +1,117 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "idNumber"
+                },
+                false,
+                {
+                    "name": "registrationRC"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "phonewa"
+                },
+                {
+                    "name": "primLanguage"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "hh02"
+                },
+                {
+                    "name": "hh317"
+                },
+                {
+                    "name": "hh1865"
+                },
+                {
+                    "name": "hh65"
+                }
+            ]
+        ],
+        "style": "warning",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Household Composition"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "modalityPreferred"
+                },
+                {
+                    "name": "modalityAssigned"
+                }
+            ]
+        ],
+        "style": "danger",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Modality"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "medical"
+                },
+                {
+                    "name": "medicalDisabled"
+                }
+            ],
+            [
+                {
+                    "name": "medicalAllergies"
+                },
+                {
+                    "name": "medicalDiabetes"
+                },
+                {
+                    "name": "medicalHighBloodPressure"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "medicalOther"
+                },
+                {
+                    "name": "medicalOtherSpecify"
+                }
+            ]
+        ],
+        "style": "info",
+        "dynamicLogicVisible": null,
+        "hidden": false,
+        "customLabel": "Medical Conditions"
+    }
+]

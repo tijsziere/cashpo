@@ -1,0 +1,40 @@
+{
+    "kanbanViewMode": false,
+    "color": "#a4c5e0",
+    "iconClass": "fas fa-user-friends",
+    "dynamicLogic": {
+        "fields": {
+            "statusWhyCancelled": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Cancelled"
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Cancelled"
+                        }
+                    ]
+                }
+            },
+            "phone2": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "otherphone",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

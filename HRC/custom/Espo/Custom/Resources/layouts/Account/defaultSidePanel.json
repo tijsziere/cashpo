@@ -1,0 +1,14 @@
+[
+    {
+        "name": "photo"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "statusWhyCancelled"
+    },
+    {
+        "name": ":assignedUser"
+    }
+]

@@ -1,0 +1,351 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress",
+            "registrationRC"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "links": {
+        "accounts": {
+            "audited": false
+        },
+        "cases": {
+            "audited": false
+        },
+        "photo": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "disabled": true
+        },
+        "distributions": {
+            "type": "hasMany",
+            "relationName": "distributionContact",
+            "foreign": "contacts",
+            "entity": "Distribution",
+            "audited": false,
+            "isCustom": true
+        },
+        "projects": {
+            "type": "hasMany",
+            "relationName": "projectContact",
+            "foreign": "contacts",
+            "entity": "Project",
+            "audited": false,
+            "isCustom": true
+        },
+        "feedbacks": {
+            "type": "hasMany",
+            "relationName": "feedbackContact",
+            "foreign": "contacts",
+            "entity": "Feedback",
+            "audited": false,
+            "isCustom": true
+        },
+        "lead": {
+            "type": "belongsTo",
+            "foreign": "contacts",
+            "entity": "Lead",
+            "audited": false,
+            "isCustom": true
+        },
+        "messages": {
+            "type": "hasMany",
+            "foreign": "contact",
+            "entity": "Message",
+            "audited": false,
+            "isCustom": true
+        },
+        "messageType": {
+            "type": "belongsTo",
+            "foreign": "contacts",
+            "entity": "MessageType",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "fields": {
+        "dateofbirth": {
+            "notNull": false,
+            "type": "date",
+            "required": true,
+            "isCustom": true,
+            "isPersonalData": true,
+            "audited": true
+        },
+        "gender": {
+            "type": "enum",
+            "options": [
+                "male",
+                "female",
+                "notsay"
+            ],
+            "style": {
+                "male": null,
+                "female": null,
+                "notsay": null
+            },
+            "default": "male",
+            "isCustom": true,
+            "audited": true,
+            "isPersonalData": true
+        },
+        "idNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "audited": true,
+            "isPersonalData": true,
+            "options": [],
+            "isCustom": true
+        },
+        "phonewa": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "photo": {
+            "type": "image",
+            "previewSize": "small",
+            "listPreviewSize": "",
+            "isPersonalData": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "primLanguage": {
+            "type": "enum",
+            "options": [
+                "English",
+                "Arabic",
+                "Kurdish",
+                "Persian",
+                "Turkish",
+                "Other"
+            ],
+            "style": {
+                "English": null,
+                "Arabic": null,
+                "Kurdish": null,
+                "Persian": null,
+                "Turkish": null,
+                "Other": null
+            },
+            "audited": true,
+            "default": "English",
+            "isCustom": true
+        },
+        "registrationRC": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 103,
+            "padLength": 5,
+            "prefix": "PA-",
+            "isCustom": true
+        },
+        "hh02": {
+            "type": "int",
+            "required": true,
+            "min": 0,
+            "audited": true,
+            "isCustom": true
+        },
+        "hh317": {
+            "type": "int",
+            "required": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "hh1865": {
+            "type": "int",
+            "isCustom": true,
+            "required": true
+        },
+        "hh65": {
+            "type": "int",
+            "required": true,
+            "audited": true,
+            "isCustom": true
+        },
+        "financeIncome": {
+            "type": "currency",
+            "required": true,
+            "min": 0,
+            "audited": true,
+            "isPersonalData": true,
+            "isCustom": true
+        },
+        "modalityPreferred": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "modalityAssigned": {
+            "type": "enum",
+            "options": [
+                "eVoucher",
+                "Voucher",
+                "Bank Transfer",
+                "Mobile money"
+            ],
+            "style": {
+                "eVoucher": null,
+                "Voucher": null,
+                "Bank Transfer": null,
+                "Mobile money": null
+            },
+            "default": "eVoucher",
+            "isCustom": true
+        },
+        "medical": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDiabetes": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalHighBloodPressure": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOther": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalOtherSpecify": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "medicalAllergies": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "medicalDisabled": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Active",
+                "Under investigation",
+                "Cancelled"
+            ],
+            "style": {
+                "Active": "success",
+                "Under investigation": "warning",
+                "Cancelled": "danger"
+            },
+            "audited": true,
+            "default": "Active",
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "statusWhyCancelled": {
+            "type": "varchar",
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "primaryPA": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "houseNumber": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "trim": true,
+            "options": [],
+            "isCustom": true
+        },
+        "distributions": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "importDisabled": false,
+            "noLoad": false,
+            "isCustom": true
+        },
+        "projects": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "importDisabled": false,
+            "noLoad": false,
+            "isCustom": true
+        },
+        "feedbacks": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
+        },
+        "lead": {
+            "type": "link"
+        },
+        "messages": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "messageType": {
+            "type": "link"
+        },
+        "duplID": {
+            "type": "int",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "distAmount": {
+            "type": "currency",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "qrCode": {
+            "type": "barcode",
+            "len": 255,
+            "codeType": "QRcode",
+            "readOnly": false,
+            "isCustom": true
+        }
+    }
+}

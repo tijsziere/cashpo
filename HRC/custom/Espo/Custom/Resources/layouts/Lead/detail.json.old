@@ -1,0 +1,344 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "age"
+                },
+                {
+                    "name": "gender"
+                },
+                {
+                    "name": "marital_status"
+                }
+            ],
+            [
+                {
+                    "name": "idNumber"
+                },
+                false,
+                {
+                    "name": "comms_preference"
+                },
+                {
+                    "name": "comms_language"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "hidden": false,
+        "customLabel": "Contact Details"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "baseline_affected"
+                },
+                {
+                    "name": "baseline_howaffected"
+                },
+                {
+                    "name": "baseline_shelter"
+                },
+                {
+                    "name": "baseline_needs"
+                }
+            ],
+            [
+                {
+                    "name": "baseline_coping"
+                },
+                {
+                    "name": "baseline_income_aff"
+                },
+                {
+                    "name": "baseline_mainincome"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "baseline_croplivestock"
+                },
+                {
+                    "name": "baseline_croplivestock_compensation"
+                },
+                {
+                    "name": "baseline_farmer"
+                },
+                {
+                    "name": "baseline_farmerwhat"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "equals",
+                    "attribute": "baseline",
+                    "value": "1"
+                }
+            ]
+        },
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "hidden": false,
+        "customLabel": "Baseline"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "addressStreet"
+                },
+                {
+                    "name": "houseNumber"
+                },
+                {
+                    "name": "addressPostalCode"
+                },
+                {
+                    "name": "municipality"
+                }
+            ],
+            [
+                {
+                    "name": "region"
+                },
+                {
+                    "name": "regional_unit"
+                },
+                false,
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "dynamicLogicStyled": null,
+        "hidden": false,
+        "customLabel": "Address"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "female_5"
+                },
+                {
+                    "name": "female_18"
+                },
+                {
+                    "name": "female_64"
+                },
+                {
+                    "name": "female_elderly"
+                }
+            ],
+            [
+                {
+                    "name": "male_5"
+                },
+                {
+                    "name": "male_18"
+                },
+                {
+                    "name": "male_64"
+                },
+                {
+                    "name": "male_elderly"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "hidden": false,
+        "customLabel": "Household Composition"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "affectedresidence"
+                },
+                {
+                    "name": "classificationtype"
+                }
+            ],
+            [
+                {
+                    "name": "powerregistrationnr"
+                },
+                {
+                    "name": "ownership"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "dynamicLogicStyled": null,
+        "hidden": false,
+        "customLabel": "Residence info"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "unemployed"
+                },
+                {
+                    "name": "disabilities"
+                },
+                {
+                    "name": "illness"
+                },
+                {
+                    "name": "large_family"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "hidden": false,
+        "customLabel": "Vulnerability"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "income_1"
+                },
+                {
+                    "name": "income_2"
+                }
+            ],
+            [
+                {
+                    "name": "bank"
+                },
+                {
+                    "name": "ibannumber"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "hidden": false,
+        "customLabel": "Finance"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "img_id_card_front"
+                },
+                {
+                    "name": "img_id_card_back"
+                },
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "E9p1"
+                },
+                {
+                    "name": "E9p2"
+                },
+                {
+                    "name": "E9p3"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "uploadclassification"
+                },
+                false,
+                {
+                    "name": "electricitybill"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "coowner_authorisation"
+                },
+                {
+                    "name": "coowner_authorisation2"
+                }
+            ],
+            [
+                {
+                    "name": "img_declaration_income_1"
+                },
+                {
+                    "name": "img_declaration_income_2"
+                },
+                {
+                    "name": "img_declaration_income_3"
+                },
+                {
+                    "name": "img_declaration_income_4"
+                }
+            ],
+            [
+                {
+                    "name": "img_other_declaration_income"
+                },
+                {
+                    "name": "img_other_declaration_income_consent"
+                },
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "img_iban"
+                },
+                false,
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "other_family_status_certificate"
+                },
+                {
+                    "name": "img_single_family_status_certificate2_001"
+                },
+                {
+                    "name": "img_single_family_status_certificate3_001"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "aff_info"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "hidden": true,
+        "customLabel": "Images (KoBo)"
+    }
+]

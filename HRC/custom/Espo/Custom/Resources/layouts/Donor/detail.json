@@ -1,0 +1,55 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "contactPointName"
+                },
+                {
+                    "name": "contactPointPhone"
+                },
+                {
+                    "name": "contactPointEmail"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "newlinetest"
+                }
+            ],
+            [
+                {
+                    "name": "newlinetestreplaced"
+                }
+            ],
+            [
+                {
+                    "name": "connector"
+                },
+                {
+                    "name": "connector2"
+                }
+            ]
+        ],
+        "style": "default",
+        "customLabel": "New panel"
+    }
+]

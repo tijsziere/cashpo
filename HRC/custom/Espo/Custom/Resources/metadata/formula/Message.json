@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "sendBody = string\\replace(body,'\\n',connector);\nto = contact.phoneNumber;"
+}

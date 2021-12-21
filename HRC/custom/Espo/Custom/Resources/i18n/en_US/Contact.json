@@ -1,0 +1,337 @@
+{
+    "labels": {
+        "Create Contact": "Create Beneficiary"
+    },
+    "fields": {
+        "accounts": "Households",
+        "originalLead": "Original Registration",
+        "gender": "Gender",
+        "idNumber": "ID Number",
+        "registrationRC": "Beneficiary number",
+        "financeIncome": "Total household income",
+        "financeIncomeCurrency": "Total household income (Currency)",
+        "financeIncomeConverted": "Total household income (Converted)",
+        "status": "Status",
+        "statusWhyCancelled": "Why Cancelled?",
+        "houseNumber": "House Number",
+        "distributions": "Distributions",
+        "projects": "Projects",
+        "feedbacks": "Feedbacks",
+        "lead": "Registration",
+        "message": "Message",
+        "messages": "Messages",
+        "messageType": "Message Type",
+        "qrCode": "QR Code",
+        "municipality": "Municipality",
+        "phone2": "2nd Phone number",
+        "powerregistrationnr": "Power supplier registration number",
+        "ibannumber": "Iban number",
+        "income_1": "E1: cumulative page 1",
+        "income_2": "E1: cumulative page 2",
+        "aff_info": "Affirmation",
+        "affectedresidence": "Affected residence",
+        "age": "Age",
+        "bank": "Bank",
+        "baseline_affected": "How much affected",
+        "baseline_coping": "Coping Mechanisms",
+        "baseline_croplivestock": "Crops damaged",
+        "baseline_croplivestock_compensation": "Crops compensated",
+        "baseline_farmer": "Farmer",
+        "baseline_farmerwhat": "What kind of farmer",
+        "baseline_howaffected": "How affected",
+        "baseline_income_aff": "Income affected",
+        "baseline_mainincome": "Main income affected",
+        "baseline_needs": "Needs",
+        "baseline_shelter": "Where did you stay after the disaster",
+        "classificationtype": "Damage classification",
+        "comms_language": "Language",
+        "comms_preference": "Comms Channels",
+        "coowner_authorisation": "Co-owner authorisation",
+        "coowner_authorisation2": "Co-owner authorisation 2",
+        "disabilities": "Disabilities in household",
+        "disastertype": "Disaster type",
+        "elderly": "Elderly in household",
+        "electricitybill": "Electricity bill",
+        "female_5": "Female, 0-5",
+        "female_64": "Female, 19-64",
+        "female_elderly": "female, 65+",
+        "female_18": "Female, 6-18",
+        "illness": "Ilnesses in the household",
+        "img_declaration_income_1": "Declaration of income, p1",
+        "img_declaration_income_2": "Declaration of income, p2",
+        "img_declaration_income_3": "Declaration of income, p3",
+        "img_declaration_income_4": "Declaration of income, p4",
+        "img_iban": "Iban (image)",
+        "img_id_card_back": "ID card, back",
+        "img_id_card_front": "ID Card, front",
+        "img_other_declaration_income": "Additional person E1",
+        "img_other_declaration_income_consent": "Consent additional E1",
+        "img_single_family_status_certificate2_001": "Family status certificate, p2",
+        "img_single_family_status_certificate3_001": "Family status certificate, p3",
+        "other_family_status_certificate": "Family status certificate, p1",
+        "large_family": "3+ children (under 18)",
+        "male_18": "Male, 6-18",
+        "male_5": "Male, 0-5",
+        "male_64": "Male, 18-64",
+        "male_elderly": "Male, 65+",
+        "marital_status": "Marital Status",
+        "otherphone": "Register 2nd phone?",
+        "ownership": "Residence Ownership",
+        "region": "Region",
+        "regional_unit": "Regional unit",
+        "single_parent": "Single Parent",
+        "unemployed": "Unemployments in household",
+        "uploadclassification": "Residence certification damages (Ministry of Infrastracture)",
+        "uniqueID": "UniqueID",
+        "totalHouseholdSize": "Total Household Size"
+    },
+    "links": {
+        "accounts": "Households",
+        "originalLead": "Original Registration",
+        "distributions": "Distributions",
+        "projects": "Projects",
+        "feedbacks": "Feedbacks",
+        "lead": "Registration",
+        "message": "Message",
+        "messages": "Messages",
+        "messageType": "Message Type"
+    },
+    "options": {
+        "gender": {
+            "male": "Male",
+            "female": "Female",
+            "notsay": "Rather not say",
+            "other_gender": "Other",
+            "prefer_not_to_say": "Not specified"
+        },
+        "status": {
+            "Active": "Active",
+            "Under investigation": "Under investigation",
+            "Cancelled": "Cancelled"
+        },
+        "disabilities": [
+            "No",
+            "Yes"
+        ],
+        "baseline_affected": {
+            "hh_aff_none": "None",
+            "little": "Little",
+            "somewhat": "Somewhat",
+            "much": "Much",
+            "very_much": "Very much"
+        },
+        "unemployed": [
+            "No",
+            "Yes"
+        ],
+        "illness": [
+            "No",
+            "Yes"
+        ],
+        "large_family": [
+            "No",
+            "Yes"
+        ],
+        "baseline_coping": {
+            "delaybills": "Delay bills",
+            "borrow": "Borrow money",
+            "cuttingbasicneeds": "Cutting basic needs",
+            "cuttingeducation": "Cutting on education"
+        },
+        "baseline_croplivestock": [
+            "No",
+            "Yes"
+        ],
+        "baseline_croplivestock_compensation": [
+            "No",
+            "Yes"
+        ],
+        "baseline_farmer": [
+            "No",
+            "Yes"
+        ],
+        "baseline_farmerwhat": {
+            "olive": "Olive",
+            "farmer": "Farmer /  Agriculture",
+            "breeder": "Breeder",
+            "beekeeper": "Beekeeper",
+            "resingrower": "Resin grower"
+        },
+        "baseline_howaffected": {
+            "destroyed": "House destroyed",
+            "lostjob": "Lost job / income reduced",
+            "cannotfindjob": "Cannot find job",
+            "cannotpaybills": "Cannot pay bills",
+            "injured": "Injured",
+            "lostfamilymember": "Lost family member",
+            "feelinsecure": "Feel insecure / lonely",
+            "increasedtension": "Increased tension at home"
+        },
+        "baseline_income_aff": {
+            "lostjob": "Lost job",
+            "lostbusiness": "Lost my business",
+            "lostcropslivestock": "Lost Crops / Livestock",
+            "affectedindustry": "My industry was affected"
+        },
+        "baseline_mainincome": [
+            "No",
+            "Yes"
+        ],
+        "baseline_needs": {
+            "rentloan": "Payment of rent / loans",
+            "repair": "House repairs",
+            "paybills": "Payment of electrical /utility bill",
+            "food": "Food",
+            "medical": "Medical",
+            "education": "Education",
+            "householdequipment": "Household equipment",
+            "clothing": "Clothing"
+        },
+        "baseline_shelter": {
+            "rent": "Rented",
+            "friendsrelatives": "Friends / Relatives",
+            "stayed": "Stayed",
+            "left": "Left home"
+        },
+        "comms_language": {
+            "greek": "Greek",
+            "english": "English"
+        },
+        "comms_preference": {
+            "comms_whatsapp": "Whatsapp",
+            "viber": "Viber",
+            "comms_email": "eMail",
+            "comms_sms": "SMS",
+            "phone": "Phone",
+            "comms_other": "Other"
+        },
+        "elderly": [
+            "No",
+            "Yes"
+        ],
+        "marital_status": {
+            "married_reg_partnership": "Married / Partnership",
+            "single": "Single",
+            "separated": "Separated",
+            "divorced": "Divorced",
+            "widow(er)": "Widow(er)"
+        },
+        "otherphone": [
+            "No",
+            "Yes"
+        ],
+        "ownership": {
+            "owner": "Owner",
+            "co-owner": "Co-owner"
+        },
+        "region": {
+            "ATT": "Attica",
+            "CGR": "Central Greece",
+            "CMA": "Central Macedonia",
+            "CRE": "Crete",
+            "EMT": "Eastern Macedonia and Thrace",
+            "EPI": "Epirus",
+            "ION": "Ionian Islands",
+            "NAE": "North Aegean",
+            "PEL": "Peloponnese",
+            "SAE": "South Aegean",
+            "THE": "Thessaly",
+            "WGR": "Western Greece",
+            "WMA": "Western Macedonia"
+        },
+        "regional_unit": {
+            "NAH": "North Athens",
+            "WAH": "West Athens",
+            "CAH": "Central Athens",
+            "SAH": "South Athens",
+            "EAT": "East Attica",
+            "PIR": "Piraeus",
+            "ISL": "Islands",
+            "WAT": "West Attica",
+            "UNC": "Unclear",
+            "BOE": "Boeotia",
+            "EUB": "Euboea",
+            "EVY": "Evrytania",
+            "PHO": "Phocis",
+            "PHT": "Phthiotis",
+            "IMA": "Imathia",
+            "THK": "Thessaloniki",
+            "KIL": "Kilkis",
+            "PEA": "Pella",
+            "PIE": "Pieria",
+            "SER": "Serres",
+            "CHL": "Chalkidiki",
+            "CHN": "Chania",
+            "HER": "Heraklion",
+            "LAS": "Lasithi",
+            "RET": "Rethymno",
+            "DRA": "Drama",
+            "EVR": "Evros",
+            "THA": "Thasos",
+            "KAV": "Kavala",
+            "XAN": "Xanthi",
+            "RHP": "Rhodope",
+            "ART": "Arta",
+            "IOA": "Ioannina",
+            "PRE": "Preveza",
+            "THT": "Thesprotia",
+            "COR": "Corfu",
+            "ITH": "Ithaca",
+            "CEP": "Cephalonia",
+            "LEF": "Lefkada",
+            "ZAK": "Zakynthos",
+            "CHI": "Chios",
+            "IKA": "Ikaria",
+            "LEM": "Lemnos",
+            "LES": "Lesbos",
+            "SAM": "Samos",
+            "ARC": "Arcadia",
+            "ARG": "Argolis",
+            "COI": "Corinthia",
+            "LAC": "Laconia",
+            "MES": "Messenia",
+            "AND": "Andros",
+            "KAL": "Kalymnos",
+            "KAP": "Karpathos",
+            "KEA": "Kea-Kythnos",
+            "KOS": "Kos",
+            "MIL": "Milos",
+            "MYK": "Mykonos",
+            "NAX": "Naxos",
+            "PAR": "Paros",
+            "RHO": "Rhodos",
+            "SYR": "Syros",
+            "SAN": "Santorini",
+            "TIN": "Tinos",
+            "KAR": "Karditsa",
+            "LAR": "Larissa",
+            "MAG": "Magnesia",
+            "SPO": "Sporades",
+            "TRI": "Trikala",
+            "ACH": "Achaea",
+            "AET": "Aetolia-Acarnania",
+            "ELI": "Elis",
+            "FLO": "Florina",
+            "GRE": "Grevena",
+            "KAS": "Kastoria",
+            "KOZ": "Kozani"
+        },
+        "single_parent": [
+            "No",
+            "Yes"
+        ],
+        "affectedresidence": {
+            "main": "Main",
+            "secondary": "Secondary"
+        },
+        "bank": {
+            "national": "National",
+            "pireos": "Pireos",
+            "alpha": "Alpha",
+            "eurobank": "Eurobank",
+            "attica": "Attica",
+            "other_bank": "Other",
+            "no_bank": "No bank"
+        }
+    }
+}

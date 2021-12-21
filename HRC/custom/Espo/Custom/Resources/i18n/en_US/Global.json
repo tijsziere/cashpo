@@ -1,0 +1,28 @@
+{
+    "scopeNames": {
+        "Contact": "Beneficiary",
+        "Lead": "Registration",
+        "Account": "Household",
+        "Household": "Household",
+        "HHMember": "HouseholdMember",
+        "Distribution": "Distribution",
+        "Project": "Project",
+        "Donor": "Donor",
+        "Feedback": "Feedback",
+        "MessageType": "Message Type",
+        "Message": "Message"
+    },
+    "scopeNamesPlural": {
+        "Contact": "Beneficiaries",
+        "Lead": "Registrations",
+        "Account": "Households",
+        "Household": "Households",
+        "HHMember": "HouseholdMembers",
+        "Distribution": "Distributions",
+        "Project": "Projects",
+        "Donor": "Donors",
+        "Feedback": "Feedback",
+        "MessageType": "Message Types",
+        "Message": "Messages"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "lead": "Registration",
+        "contacts": "Persons Affected",
+        "feedback": "Feedback",
+        "update": "Update"
+    },
+    "links": {
+        "lead": "Registration",
+        "contacts": "Persons Affected",
+        "feedback": "Feedback"
+    },
+    "options": {
+        "type": {
+            "": "",
+            "Question": "Question",
+            "Incident": "Incident",
+            "Problem": "Problem",
+            "followup": "Feedback follow up"
+        }
+    }
+}
